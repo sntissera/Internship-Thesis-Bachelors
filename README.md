@@ -20,9 +20,9 @@ Original Dataset: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE194329
 
 The dataset was composed of 6 glioblastoma samples, 5 tumor samples and 1 peritumor sample. The peritumor sample was used as a reference to compare with tumor associated entropy profiles. Raw sequences were already quality controlled by the authors. Raw sequencing and large processed datasets are not stored in this repository. The corresponding data source and publication is documented in the thesis.
 
-## Materials and Methods
+## Pipeline
 
-Spatial Transcriptomics Data │ ▼ SCTransform │ ▼ Seurat-based Analysis │ ▼ Spatial Entropy Calculation │ ▼ Entropy Distributions
+Spatial Transcriptomics Data -> Normalization using `SCTransform()` -> Transcriptional Entropy Calculation -> Entropy Distribution -> Guassian Mixture Model Classification -> 
 
 
 
