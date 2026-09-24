@@ -22,7 +22,21 @@ The dataset was composed of 6 glioblastoma samples, 5 tumor samples and 1 peritu
 
 ## Pipeline
 
-Spatial Transcriptomics Data -> Normalization using `SCTransform()` -> Transcriptional Entropy Calculation -> Entropy Distribution -> Guassian Mixture Model Classification -> 
+Spatial Transcriptomics Data -> Normalization using `SCTransform()` -> Transcriptional Entropy Calculation and Scaling -> Entropy Distribution -> Classification into discrete spatial regions using Gaussian Mixture Model (GMM) -> Shared vs Sample specific gene extraction -> Functional Enrichment analysis -> Module score validation -> Correlation analysis -> Fisher's Exact test -> Visualization of both discrete and continuous entropy based spatial regions.
+
+## Calculations
+
+### Transcriptional Entropy
+
+For each gene, transcriptional entropy was calculated across each spatial spot to quantify the variability of gene expression patterns. The resulting values were used to characterize spatial heterogeneity by means of Mean Entropy, standard deviation of entropy and entropy distributions.
+
+
+
+
+
+
+
+
 
 
 
